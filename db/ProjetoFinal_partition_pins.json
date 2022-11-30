@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Fim",
+					"strict" : false
+				},
+				{
+					"name" : "HexA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HexA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HexA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HexA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HexA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HexA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HexA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HexB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HexB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HexB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HexB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HexB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HexB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HexB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HexS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HexS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HexS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HexS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HexS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HexS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HexS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "estado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "estado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "estado[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instrucao",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "Dados[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Dados[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Dados[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Dados[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

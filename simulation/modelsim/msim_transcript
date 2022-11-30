@@ -1,0 +1,126 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do ProjetoFinal_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal {C:/intelFPGA_lite/18.0/Projetos/projetofinal/registro.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:24:34 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal" C:/intelFPGA_lite/18.0/Projetos/projetofinal/registro.v 
+# -- Compiling module registro
+# 
+# Top level modules:
+# 	registro
+# End time: 17:24:34 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal {C:/intelFPGA_lite/18.0/Projetos/projetofinal/seletor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:24:34 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal" C:/intelFPGA_lite/18.0/Projetos/projetofinal/seletor.v 
+# -- Compiling module seletor
+# 
+# Top level modules:
+# 	seletor
+# End time: 17:24:34 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal {C:/intelFPGA_lite/18.0/Projetos/projetofinal/ULA.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:24:34 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal" C:/intelFPGA_lite/18.0/Projetos/projetofinal/ULA.v 
+# -- Compiling module ULA
+# 
+# Top level modules:
+# 	ULA
+# End time: 17:24:34 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal {C:/intelFPGA_lite/18.0/Projetos/projetofinal/deslocamento.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:24:34 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal" C:/intelFPGA_lite/18.0/Projetos/projetofinal/deslocamento.v 
+# -- Compiling module deslocamento
+# ** Warning: C:/intelFPGA_lite/18.0/Projetos/projetofinal/deslocamento.v(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	deslocamento
+# End time: 17:24:34 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal {C:/intelFPGA_lite/18.0/Projetos/projetofinal/controle.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:24:34 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal" C:/intelFPGA_lite/18.0/Projetos/projetofinal/controle.v 
+# -- Compiling module controle
+# 
+# Top level modules:
+# 	controle
+# End time: 17:24:34 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal {C:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:24:34 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal" C:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital.v 
+# -- Compiling module sisDigital
+# 
+# Top level modules:
+# 	sisDigital
+# End time: 17:24:34 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal {C:/intelFPGA_lite/18.0/Projetos/projetofinal/display.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:24:34 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal" C:/intelFPGA_lite/18.0/Projetos/projetofinal/display.v 
+# -- Compiling module display
+# 
+# Top level modules:
+# 	display
+# End time: 17:24:34 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal {C:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital_TB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:24:34 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal" C:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital_TB.v 
+# -- Compiling module sisDigital_TB
+# 
+# Top level modules:
+# 	sisDigital_TB
+# End time: 17:24:34 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  sisDigital_TB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" sisDigital_TB 
+# Start time: 17:24:34 on Nov 29,2022
+# Loading work.sisDigital_TB
+# Loading work.sisDigital
+# Loading work.controle
+# Loading work.registro
+# Loading work.seletor
+# Loading work.ULA
+# Loading work.deslocamento
+# Loading work.display
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Guilherme Horita  Hostname: DESKTOP-D5V1CVV  ProcessID: 26148
+#           Attempting to use alternate WLF file "./wlftvzh49v".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftvzh49v
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Inicio da Simulacao:
+# ** Note: $finish    : C:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital_TB.v(47)
+#    Time: 350 ns  Iteration: 0  Instance: /sisDigital_TB
+# 1
+# Break in Module sisDigital_TB at C:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital_TB.v line 47
+# scratch: empty index list.
+# End time: 15:33:27 on Nov 30,2022, Elapsed time: 22:08:53
+# Errors: 1, Warnings: 2

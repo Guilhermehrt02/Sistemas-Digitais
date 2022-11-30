@@ -1,0 +1,18 @@
+module deslocamento(Dados, clk, Op_Reg, Saida);
+
+input wire [5:0] Dados;
+input wire clk;
+input wire [1:0] Op_reg;
+output wire [5:0] Saida;
+
+always@(*) begin
+
+	case(Op_Reg)
+		0: 
+		1: Saida = Dados;
+		2: Saida = {1'b0,Saida[4:0]};
+		3: Saida = {Saida[4:0],Saida[0]};
+	endcase
+end 
+
+endmodule 

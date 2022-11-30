@@ -1,0 +1,8 @@
+module sisDigital(Dados, Instrucao, clk, EnA, EnB, sel,
+	Op, OpReg, fimA, fimB, FimOp);
+
+input [5:0] Dados;
+input clk, rst, Op, OpReg;
+output [6:0] Hex0, Hex1;
+
+endmodule 

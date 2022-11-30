@@ -1,0 +1,29 @@
+`timescale 1ns/1ps 
+module sisDigital_TB;
+
+reg [5:0] Dados;
+reg clk, rst, Instrucao;
+wire [6:0] HexA, HexB, HexS;
+wire Fim;
+
+//module sisDigital(Dados, Instrucao, clk, rst, Fim, HexA, HexB, HexS);
+sisDigital DUT(Dados, Instrucao, clk, rst, Fim, HexA, HexB, HexS);
+
+initial begin
+		Dados = 6'd5;
+		Instrucao = 1'b0;
+		clk = 1'b0;
+		rst = 1'b1;	
+		#64   rst = 0;
+    #542	A = 4'd1; B = 4'd9;
+    #320	A = 4'd7; B = 4'd6;
+    #320	B = 4'd3;
+	end
+	
+always 
+	#10 	clk = ~clk;
+
+always
+	#400 	Instrucao = ~Instrucao;
+	
+endmodule 

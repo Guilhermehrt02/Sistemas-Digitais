@@ -1,0 +1,189 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.0/Projetos/projetofinal/simulation/modelsim
+vcontrole
+Z1 !s110 1669753474
+!i10b 1
+!s100 SM8DOUVP=WS5QCh:213?I2
+IaBlnL5W1U0gPHV6H1Tjk[0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1669752613
+8C:/intelFPGA_lite/18.0/Projetos/projetofinal/controle.v
+FC:/intelFPGA_lite/18.0/Projetos/projetofinal/controle.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1669753474.000000
+!s107 C:/intelFPGA_lite/18.0/Projetos/projetofinal/controle.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal|C:/intelFPGA_lite/18.0/Projetos/projetofinal/controle.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal
+Z7 tCvgOpt 0
+vdeslocamento
+R1
+!i10b 1
+!s100 OMGVkdPLod9:^7`1gb^nA0
+I2IQk459[mT<Po2`g]I0693
+R2
+R0
+Z8 w1669752614
+8C:/intelFPGA_lite/18.0/Projetos/projetofinal/deslocamento.v
+FC:/intelFPGA_lite/18.0/Projetos/projetofinal/deslocamento.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.0/Projetos/projetofinal/deslocamento.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal|C:/intelFPGA_lite/18.0/Projetos/projetofinal/deslocamento.v|
+!i113 1
+R5
+R6
+R7
+vdisplay
+R1
+!i10b 1
+!s100 VU6YYcN`J34OT[][R@m7V1
+I23jKX:KFHM>42nLj;N2g]1
+R2
+R0
+w1669386029
+8C:/intelFPGA_lite/18.0/Projetos/projetofinal/display.v
+FC:/intelFPGA_lite/18.0/Projetos/projetofinal/display.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.0/Projetos/projetofinal/display.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal|C:/intelFPGA_lite/18.0/Projetos/projetofinal/display.v|
+!i113 1
+R5
+R6
+R7
+vregistro
+R1
+!i10b 1
+!s100 e1NkI7Y@Cc^PXmFPT1<[h3
+ISQ6K@hY394]ZZ@Z0o_6iV0
+R2
+R0
+R8
+8C:/intelFPGA_lite/18.0/Projetos/projetofinal/registro.v
+FC:/intelFPGA_lite/18.0/Projetos/projetofinal/registro.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.0/Projetos/projetofinal/registro.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal|C:/intelFPGA_lite/18.0/Projetos/projetofinal/registro.v|
+!i113 1
+R5
+R6
+R7
+vseletor
+R1
+!i10b 1
+!s100 ;W]>E`3<kdVfjIWNA6dTX3
+Ikgi6B=Fl_8oPM9Z<LQ7GK3
+R2
+R0
+w1668894326
+8C:/intelFPGA_lite/18.0/Projetos/projetofinal/seletor.v
+FC:/intelFPGA_lite/18.0/Projetos/projetofinal/seletor.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.0/Projetos/projetofinal/seletor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal|C:/intelFPGA_lite/18.0/Projetos/projetofinal/seletor.v|
+!i113 1
+R5
+R6
+R7
+vsisDigital
+R1
+!i10b 1
+!s100 [;Y<z9MYA5eo6Hl1_h3Jn1
+ImJTEP<A?^NFX:j5]Vm@m=1
+R2
+R0
+w1669751444
+8C:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital.v
+FC:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal|C:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital.v|
+!i113 1
+R5
+R6
+R7
+nsis@digital
+vsisDigital_TB
+R1
+!i10b 1
+!s100 bPKza7>YF[9aUiNVjVJL43
+I=BNgZzhJ:ca6_h5Ml4H8F1
+R2
+R0
+w1669753458
+8C:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital_TB.v
+FC:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital_TB.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal|C:/intelFPGA_lite/18.0/Projetos/projetofinal/sisDigital_TB.v|
+!i113 1
+R5
+R6
+R7
+nsis@digital_@t@b
+vULA
+R1
+!i10b 1
+!s100 5lZlDL:36Xf?]`fH0[dKl0
+IWel9GMeBZOk>THSmQ_REG2
+R2
+R0
+w1668875821
+8C:/intelFPGA_lite/18.0/Projetos/projetofinal/ULA.v
+FC:/intelFPGA_lite/18.0/Projetos/projetofinal/ULA.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.0/Projetos/projetofinal/ULA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/Projetos/projetofinal|C:/intelFPGA_lite/18.0/Projetos/projetofinal/ULA.v|
+!i113 1
+R5
+R6
+R7
+n@u@l@a

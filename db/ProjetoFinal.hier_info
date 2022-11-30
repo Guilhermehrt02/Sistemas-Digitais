@@ -1,0 +1,301 @@
+|sisDigital
+Dados[0] => Dados[0].IN2
+Dados[1] => Dados[1].IN2
+Dados[2] => Dados[2].IN2
+Dados[3] => Dados[3].IN2
+Instrucao => Instrucao.IN1
+clk => clk.IN4
+rst => rst.IN4
+Fim << controle:c.port8
+HexA[0] << display:d1.port1
+HexA[1] << display:d1.port1
+HexA[2] << display:d1.port1
+HexA[3] << display:d1.port1
+HexA[4] << display:d1.port1
+HexA[5] << display:d1.port1
+HexA[6] << display:d1.port1
+HexB[0] << display:d2.port1
+HexB[1] << display:d2.port1
+HexB[2] << display:d2.port1
+HexB[3] << display:d2.port1
+HexB[4] << display:d2.port1
+HexB[5] << display:d2.port1
+HexB[6] << display:d2.port1
+HexS[0] << display:d3.port1
+HexS[1] << display:d3.port1
+HexS[2] << display:d3.port1
+HexS[3] << display:d3.port1
+HexS[4] << display:d3.port1
+HexS[5] << display:d3.port1
+HexS[6] << display:d3.port1
+estado[0] << controle:c.port9
+estado[1] << controle:c.port9
+estado[2] << controle:c.port9
+
+
+|sisDigital|controle:c
+Instrucao => E.DATAB
+Instrucao => E.DATAB
+clk => E~1.DATAIN
+rst => E~3.DATAIN
+EnA <= EnA.DB_MAX_OUTPUT_PORT_TYPE
+EnB <= EnB.DB_MAX_OUTPUT_PORT_TYPE
+Sel <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Op[0] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Op[1] <= Op[1].DB_MAX_OUTPUT_PORT_TYPE
+OpReg[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+OpReg[1] <= OpReg[1].DB_MAX_OUTPUT_PORT_TYPE
+Fim <= Fim.DB_MAX_OUTPUT_PORT_TYPE
+estado[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+estado[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+estado[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sisDigital|registro:RegA
+Dados[0] => Saida[0]~reg0.DATAIN
+Dados[1] => Saida[1]~reg0.DATAIN
+Dados[2] => Saida[2]~reg0.DATAIN
+Dados[3] => Saida[3]~reg0.DATAIN
+Dados[4] => Saida[4]~reg0.DATAIN
+Dados[5] => Saida[5]~reg0.DATAIN
+clk => Saida[0]~reg0.CLK
+clk => Saida[1]~reg0.CLK
+clk => Saida[2]~reg0.CLK
+clk => Saida[3]~reg0.CLK
+clk => Saida[4]~reg0.CLK
+clk => Saida[5]~reg0.CLK
+rst => Saida[0]~reg0.ACLR
+rst => Saida[1]~reg0.ACLR
+rst => Saida[2]~reg0.ACLR
+rst => Saida[3]~reg0.ACLR
+rst => Saida[4]~reg0.ACLR
+rst => Saida[5]~reg0.ACLR
+En => Saida[0]~reg0.ENA
+En => Saida[5]~reg0.ENA
+En => Saida[4]~reg0.ENA
+En => Saida[3]~reg0.ENA
+En => Saida[2]~reg0.ENA
+En => Saida[1]~reg0.ENA
+Saida[0] <= Saida[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[1] <= Saida[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[2] <= Saida[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[3] <= Saida[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[4] <= Saida[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[5] <= Saida[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sisDigital|registro:RegB
+Dados[0] => Saida[0]~reg0.DATAIN
+Dados[1] => Saida[1]~reg0.DATAIN
+Dados[2] => Saida[2]~reg0.DATAIN
+Dados[3] => Saida[3]~reg0.DATAIN
+Dados[4] => Saida[4]~reg0.DATAIN
+Dados[5] => Saida[5]~reg0.DATAIN
+clk => Saida[0]~reg0.CLK
+clk => Saida[1]~reg0.CLK
+clk => Saida[2]~reg0.CLK
+clk => Saida[3]~reg0.CLK
+clk => Saida[4]~reg0.CLK
+clk => Saida[5]~reg0.CLK
+rst => Saida[0]~reg0.ACLR
+rst => Saida[1]~reg0.ACLR
+rst => Saida[2]~reg0.ACLR
+rst => Saida[3]~reg0.ACLR
+rst => Saida[4]~reg0.ACLR
+rst => Saida[5]~reg0.ACLR
+En => Saida[0]~reg0.ENA
+En => Saida[5]~reg0.ENA
+En => Saida[4]~reg0.ENA
+En => Saida[3]~reg0.ENA
+En => Saida[2]~reg0.ENA
+En => Saida[1]~reg0.ENA
+Saida[0] <= Saida[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[1] <= Saida[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[2] <= Saida[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[3] <= Saida[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[4] <= Saida[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[5] <= Saida[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sisDigital|seletor:s
+A[0] => Saida.DATAA
+A[1] => Saida.DATAA
+A[2] => Saida.DATAA
+A[3] => Saida.DATAA
+A[4] => Saida.DATAA
+A[5] => Saida.DATAA
+B[0] => Saida.DATAB
+B[1] => Saida.DATAB
+B[2] => Saida.DATAB
+B[3] => Saida.DATAB
+B[4] => Saida.DATAB
+B[5] => Saida.DATAB
+sel => Saida.OUTPUTSELECT
+sel => Saida.OUTPUTSELECT
+sel => Saida.OUTPUTSELECT
+sel => Saida.OUTPUTSELECT
+sel => Saida.OUTPUTSELECT
+sel => Saida.OUTPUTSELECT
+Saida[0] <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+Saida[1] <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+Saida[2] <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+Saida[3] <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+Saida[4] <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+Saida[5] <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sisDigital|ULA:u
+A[0] => Add0.IN6
+A[0] => Add1.IN12
+A[0] => Mux5.IN3
+A[0] => Mux5.IN2
+A[1] => Add0.IN5
+A[1] => Add1.IN11
+A[1] => Mux4.IN3
+A[1] => Mux4.IN2
+A[2] => Add0.IN4
+A[2] => Add1.IN10
+A[2] => Mux3.IN3
+A[2] => Mux3.IN2
+A[3] => Add0.IN3
+A[3] => Add1.IN9
+A[3] => Mux2.IN3
+A[3] => Mux2.IN2
+A[4] => Add0.IN2
+A[4] => Add1.IN8
+A[4] => Mux1.IN3
+A[4] => Mux1.IN2
+A[5] => Add0.IN1
+A[5] => Add1.IN7
+A[5] => Mux0.IN3
+A[5] => Mux0.IN2
+B[0] => Add0.IN12
+B[0] => Add1.IN6
+B[1] => Add0.IN11
+B[1] => Add1.IN5
+B[2] => Add0.IN10
+B[2] => Add1.IN4
+B[3] => Add0.IN9
+B[3] => Add1.IN3
+B[4] => Add0.IN8
+B[4] => Add1.IN2
+B[5] => Add0.IN7
+B[5] => Add1.IN1
+Op[0] => Mux0.IN5
+Op[0] => Mux1.IN5
+Op[0] => Mux2.IN5
+Op[0] => Mux3.IN5
+Op[0] => Mux4.IN5
+Op[0] => Mux5.IN5
+Op[1] => Mux0.IN4
+Op[1] => Mux1.IN4
+Op[1] => Mux2.IN4
+Op[1] => Mux3.IN4
+Op[1] => Mux4.IN4
+Op[1] => Mux5.IN4
+Saida[0] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Saida[1] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Saida[2] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Saida[3] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Saida[4] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Saida[5] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sisDigital|deslocamento:RegC
+Dados[0] => Mux4.IN2
+Dados[0] => Mux5.IN1
+Dados[0] => Mux5.IN2
+Dados[1] => Mux3.IN2
+Dados[1] => Mux4.IN1
+Dados[1] => Mux5.IN0
+Dados[2] => Mux2.IN2
+Dados[2] => Mux3.IN1
+Dados[2] => Mux4.IN0
+Dados[3] => Mux1.IN2
+Dados[3] => Mux2.IN1
+Dados[3] => Mux3.IN0
+Dados[4] => Mux0.IN2
+Dados[4] => Mux1.IN1
+Dados[4] => Mux2.IN0
+Dados[5] => Mux0.IN1
+Dados[5] => Mux1.IN0
+clk => Saida[0]~reg0.CLK
+clk => Saida[1]~reg0.CLK
+clk => Saida[2]~reg0.CLK
+clk => Saida[3]~reg0.CLK
+clk => Saida[4]~reg0.CLK
+clk => Saida[5]~reg0.CLK
+rst => Saida[0]~reg0.ACLR
+rst => Saida[1]~reg0.ACLR
+rst => Saida[2]~reg0.ACLR
+rst => Saida[3]~reg0.ACLR
+rst => Saida[4]~reg0.ACLR
+rst => Saida[5]~reg0.ACLR
+OpReg[0] => Mux0.IN4
+OpReg[0] => Mux1.IN4
+OpReg[0] => Mux2.IN4
+OpReg[0] => Mux3.IN4
+OpReg[0] => Mux4.IN4
+OpReg[0] => Mux5.IN4
+OpReg[1] => Mux0.IN3
+OpReg[1] => Mux1.IN3
+OpReg[1] => Mux2.IN3
+OpReg[1] => Mux3.IN3
+OpReg[1] => Mux4.IN3
+OpReg[1] => Mux5.IN3
+Saida[0] <= Saida[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[1] <= Saida[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[2] <= Saida[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[3] <= Saida[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[4] <= Saida[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saida[5] <= Saida[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sisDigital|display:d1
+Entrada[0] => Decoder0.IN5
+Entrada[1] => Decoder0.IN4
+Entrada[2] => Decoder0.IN3
+Entrada[3] => Decoder0.IN2
+Entrada[4] => Decoder0.IN1
+Entrada[5] => Decoder0.IN0
+Hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sisDigital|display:d2
+Entrada[0] => Decoder0.IN5
+Entrada[1] => Decoder0.IN4
+Entrada[2] => Decoder0.IN3
+Entrada[3] => Decoder0.IN2
+Entrada[4] => Decoder0.IN1
+Entrada[5] => Decoder0.IN0
+Hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sisDigital|display:d3
+Entrada[0] => Decoder0.IN5
+Entrada[1] => Decoder0.IN4
+Entrada[2] => Decoder0.IN3
+Entrada[3] => Decoder0.IN2
+Entrada[4] => Decoder0.IN1
+Entrada[5] => Decoder0.IN0
+Hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

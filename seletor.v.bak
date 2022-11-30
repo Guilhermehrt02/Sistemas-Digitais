@@ -1,0 +1,15 @@
+module seletor(A, B, sel, Saida);
+
+input wire [3:0] A, B;
+input wire sel;
+output reg [3:0] Saida;
+
+always @ (*) begin
+
+	if(sel)
+		Saida <= B;
+	else
+		Saida <= A;
+end
+
+endmodule 

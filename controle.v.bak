@@ -1,0 +1,62 @@
+module controle(Instrucao, clk, EnA, EnB, sel, Op, OpReg, fimA, fimB, FimOp, estado);
+
+input wire Instrucao, clk, sel, Op, OpReg, fimA, fimB;
+output reg EnA, EnB, fimOp;
+output wire [1:0] estado;
+reg [1:0] E;
+
+//declaração dos estados
+parameter[1:0] S0 = 0;
+parameter[1:0] S1 = 1;
+parameter[1:0] S2 = 2;
+parameter[1:0] S3 = 3;
+
+
+assign estado = E;
+
+//bloco para gerenciar os estados
+always @(posedge clk)
+	case (E)
+		S0:E<=S1;
+		S1: if(fimA)  
+				E<=S2;
+			 else	     
+				E<=S1;
+		S2: if(fimB)  
+				E<=S3;
+			 else	     
+				E<=S2;
+		S3:  
+			E<=S0;
+			 else	     
+			E<=S2;
+	endcase
+
+	
+//bloco para gerenciar as saidas	
+always@ (E)
+	case (E)
+		S0: 
+			begin	
+				EnA <= 0; 	
+				EnB <= 0;
+			end
+		S1:     
+			begin
+				EnA <= 1; 	
+				EnB <= 0;
+			end
+		S2:     
+			begin
+				EnA <= 0; 	
+				EnB <= 1;
+			end
+		S3:     
+			begin
+				EnA <= 0; 	
+				EnB <= 0;
+				
+				Fim <= 1;
+			end
+	endcase
+endmodule 

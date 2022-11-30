@@ -1,0 +1,15 @@
+module registro(Dados, clk, En, Saida);
+
+input wire [3:0] Dados;
+input wire clk, En;
+output reg [3:0] Saida;
+
+always @ ( posedge clk or posedge rst )
+begin
+
+	if (Hab)
+		Saida <= Dados;
+end
+
+
+endmodule 

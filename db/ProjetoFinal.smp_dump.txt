@@ -1,0 +1,10 @@
+
+State Machine - |sisDigital|controle:c|E
+Name E~6 E~5 E~4 
+E.S0 0 0 0 
+E.S1 0 0 1 
+E.S2 0 1 0 
+E.S3 0 1 1 
+E.S4 1 0 0 
+E.S5 1 0 1 
+E.S6 1 1 0 
